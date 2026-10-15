@@ -1,0 +1,23 @@
+{
+  "metrics": {
+    "mae": 0.6961900687210715,
+    "rmse": 0.8694123828746245
+  },
+  "model_path": "C:\\Users\\Yash madan\\PROJECTSSS\\BIGDATA MID TERM PROJECT\\movie_recsys\\data\\models\\als",
+  "parameters": {
+    "algorithm": "spark_ml_als",
+    "cold_start_strategy": "drop",
+    "max_iter": 10,
+    "rank": 10,
+    "reg_param": 0.1,
+    "seed": 42,
+    "train_fraction": 0.8
+  },
+  "row_counts": {
+    "predictions_evaluated": 200160,
+    "ratings_total": 1000209,
+    "test": 200207,
+    "training": 800002
+  },
+  "trained_at": "2026-10-15T13:26:21.280597+00:00"
+}

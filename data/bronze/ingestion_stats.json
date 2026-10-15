@@ -1,0 +1,24 @@
+{
+  "duration_seconds": 12.527,
+  "ingested_at": "2026-10-15T12:51:48.099357+00:00",
+  "tables": {
+    "movies": {
+      "duration_seconds": 0.568,
+      "file_size_bytes": 171308,
+      "row_count": 3883,
+      "source_file": "movies.dat"
+    },
+    "ratings": {
+      "duration_seconds": 11.463,
+      "file_size_bytes": 24594131,
+      "row_count": 1000209,
+      "source_file": "ratings.dat"
+    },
+    "users": {
+      "duration_seconds": 0.493,
+      "file_size_bytes": 134368,
+      "row_count": 6040,
+      "source_file": "users.dat"
+    }
+  }
+}

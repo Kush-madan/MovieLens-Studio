@@ -1,0 +1,27 @@
+{
+  "date_range": {
+    "end": "2003-02-28T23:19:50",
+    "start": "2000-04-26T04:35:32"
+  },
+  "density": 0.04264679797998748,
+  "generated_at": "2026-10-15T13:10:20.294883+00:00",
+  "global_average_rating": 3.581564453029317,
+  "min_ratings": 20,
+  "row_counts": {
+    "demographics": 12,
+    "genre_popularity": 18,
+    "genre_stats_by_decade": 154,
+    "most_popular_movies": 10,
+    "movie_stats": 3883,
+    "rating_distribution": 5,
+    "ratings_over_time": 35,
+    "top_rated_movies": 10,
+    "user_activity": 6040,
+    "user_activity_buckets": 3
+  },
+  "sparsity": 0.9573532020200125,
+  "top_n": 10,
+  "total_movies": 3883,
+  "total_ratings": 1000209,
+  "total_users": 6040
+}

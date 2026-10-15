@@ -1,0 +1,84 @@
+{
+  "cleaned_at": "2026-10-15T12:52:38.641178+00:00",
+  "duplicate_count": 0,
+  "null_counts": {
+    "movies": {
+      "genres": 0,
+      "movie_id": 0,
+      "title": 0
+    },
+    "ratings": {
+      "movie_id": 0,
+      "rating": 0,
+      "timestamp": 0,
+      "user_id": 0
+    },
+    "users": {
+      "age": 0,
+      "gender": 0,
+      "occupation": 0,
+      "user_id": 0,
+      "zip_code": 0
+    }
+  },
+  "orphan_count": 0,
+  "per_rule_rejected_counts": {
+    "movie_id_non_positive": 0,
+    "null_required_fields": 0,
+    "orphan_movie_id": 0,
+    "rating_out_of_range": 0,
+    "timestamp_in_future": 0,
+    "user_id_non_positive": 0
+  },
+  "rating_bounds": {
+    "max": 5.0,
+    "min": 0.5
+  },
+  "rows_in": 1000209,
+  "rows_out": 1000209,
+  "tables": {
+    "movies": {
+      "exact_duplicate_rows": 0,
+      "null_counts": {
+        "genres": 0,
+        "movie_id": 0,
+        "title": 0
+      },
+      "rows_in": 3883,
+      "rows_out": 3883
+    },
+    "ratings": {
+      "duplicate_user_movie_rows": 0,
+      "exact_duplicate_rows": 0,
+      "null_counts": {
+        "movie_id": 0,
+        "rating": 0,
+        "timestamp": 0,
+        "user_id": 0
+      },
+      "orphan_rows": 0,
+      "rejected_counts": {
+        "movie_id_non_positive": 0,
+        "null_required_fields": 0,
+        "orphan_movie_id": 0,
+        "rating_out_of_range": 0,
+        "timestamp_in_future": 0,
+        "user_id_non_positive": 0
+      },
+      "rows_in": 1000209,
+      "rows_out": 1000209
+    },
+    "users": {
+      "exact_duplicate_rows": 0,
+      "null_counts": {
+        "age": 0,
+        "gender": 0,
+        "occupation": 0,
+        "user_id": 0,
+        "zip_code": 0
+      },
+      "rows_in": 6040,
+      "rows_out": 6040
+    }
+  }
+}
