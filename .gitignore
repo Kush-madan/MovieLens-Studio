@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+config/config.yaml
+*.egg-info/
+*.ipynb_checkpoints/
+
+# Spark and local build artifacts
+.sparkStaging/
+metastore_db/
+derby.log
+*.log
+airflow/logs/
+airflow/airflow.db
+
+# Project data and generated outputs
+# Keep the directory layout, but do not commit datasets or generated artifacts.
+data/raw/*
+data/bronze/*
+data/silver/*
+data/gold/*
+data/models/*
+data/recommendations/*
+!data/raw/ml-1m/.gitkeep
+!data/bronze/.gitkeep
+!data/silver/.gitkeep
+!data/gold/.gitkeep
+!data/models/.gitkeep
+!data/recommendations/.gitkeep
+
+# Streamlit
+.streamlit/
+!.streamlit/.gitkeep
+
+# Archives and local exports
+*.zip
+*.tar.gz

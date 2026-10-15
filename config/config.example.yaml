@@ -1,0 +1,62 @@
+project:
+  name: movie_recsys
+  random_seed: 42
+
+cleaning:
+  rating_min: 0.5
+  rating_max: 5.0
+
+analytics:
+  top_n: 10
+  min_ratings: 20
+  activity_buckets:
+    - name: 1-5
+      min: 1
+      max: 5
+    - name: 6-20
+      min: 6
+      max: 20
+    - name: 21-50
+      min: 21
+      max: 50
+    - name: 51+
+      min: 51
+
+model:
+  rank: 10
+  max_iter: 10
+  reg_param: 0.1
+  seed: 42
+  train_fraction: 0.8
+  ranking_k: 10
+
+recommendations:
+  top_n: 10
+  min_user_ratings: 5
+
+validation:
+  expected_users: 6040
+  expected_movies: 3883
+  expected_ratings: 1000209
+
+paths:
+  raw_ml1m: data/raw/ml-1m
+  bronze: data/bronze
+  silver: data/silver
+  gold: data/gold
+  models: data/models
+  recommendations: data/recommendations
+
+spark:
+  app_name: MovieRecommendationSystem
+  master: local[2]
+  driver_memory: 1g
+  executor_memory: 1g
+  shuffle_partitions: 4
+  log_level: WARN
+  adaptive_query_execution: true
+  checkpoint_dir: data/.spark_checkpoint
+  windows:
+    # Optional. Set this to a directory containing winutils.exe if Spark requires it.
+    # Prefer setting HADOOP_HOME in the shell or VS Code environment.
+    hadoop_home: null
